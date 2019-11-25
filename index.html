@@ -12,28 +12,39 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
-<body>
+<body id="goToTop">
+    <a href="#goToTop" id="goToTopBtn" class="go-to-top">Top</a>
     <header>
+      <div class="wrapper">
         <div class="container">
             <a href="#" class="logo">
                 <img src="images/logo.jpg" alt=logo>
             </a>
-            <nav class="pc">
+            <nav id="navlist" class="pc">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Programmes</a></li>
-                    <li><a href="#">Admission</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="https://www.google.co.in/">Home</a></li>
+                    <li><a href="https://www.google.co.in/">Programmes</a></li>
+                    <li><a href="https://github.com/priyankabulia?tab=repositories">Admission</a></li>
+                    <li><a href="https://shalove9895.github.io/university2/">Research</a></li>
+                    <li><a href="https://sandhiyadenniys.github.io/university/">Contact Us</a></li>
                     <li class="sign"><a href="#">SIGN IN</a></li>
                 </ul>
             </nav>
-            <button class="sp"><i class="fa fa-bars"></i></button>
+            <button class="sp" id="menuBtn"><i class="fa fa-bars"></i></button>
         </div>
+       <!--  <div class="sp_menu">
+          <ul class="mobile">
+              <li><a href="#1">Home</a></li>
+              <li><a href="#2">Programmes</a></li>
+              <li><a href="#3">Admission</a></li>
+              <li><a href="#4">Research</a></li>
+              <li><a href="#5">Contact Us</a></li>
+          </ul>
+        </div> -->
+      </div>
     </header>
     <main>
-        <div class="main-visual">
+        <div class="main-visual" >
             <div class="container">
                 <h1>QUALITY<br>EDUCATION</h1>
             </div>
@@ -44,7 +55,7 @@
                 <a class="second-btn" href="#">GET IN TOUCH</a>
             </div>
         </div>
-        <div class="programmes">
+        <div class="programmes" >
             <h1 class="common-heading">Programmes</h1>
             <div class="container">
                 <div class="ug">
@@ -79,7 +90,7 @@
                 </div>
             </div>
         </div>
-        <div class="addmission">
+        <div class="addmission" >
             <div class="container">
                 <h1 class="common-heading">Admission Apply</h1>
                 <div class="para">
@@ -93,14 +104,15 @@
                     <input name="E-MAIL" type="text" placeholder="E-MAIL:">
                     <input name="PHONE NO." type="text" placeholder="PHONE NO.:">
                     <textarea class="address" cols="15" rows="10" placeholder="ADDRESS:"></textarea>
+                    
                 </form>
             </div>
         </div>
-        <div class="research">
+        <div class="research" >
             <div class="container">
                 <h1 class="common-heading">Research</h1>
                 <div class="research-cont">
-                    <div class="re1">
+                    <div class="re1 first active">
                         <img src="images/res1.jpg" alt="taxations">
                         <div class="tax1">
                             <h1>TAXATIONS</h1>
@@ -114,7 +126,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="re1 pc">
+                    <div class="re1">
                         <img src="images/res2.jpg" alt="chemistry laboratory">
                         <div class="tax1">
                             <h1>CHEMISTRY LAB</h1>
@@ -128,7 +140,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="re1 pc">
+                    <div class="re1 last">
                         <img src="images/res3.jpg" alt="microscope">
                         <div class="tax1">
                             <h1>MICROSCOPE</h1>
@@ -142,14 +154,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider sp">
-                        <ul class="dots">
-                            <li class="active"></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
                 </div>
+                <div class="slider sp">
+                    <ul class="dots">
+                        <li class="first active"></li>
+                        <li></li>
+                        <li class="last"></li>
+                    </ul>
+                </div>
+                
+              <!--   <button id="prev">&lt;</button>
+                <button id="next">&gt;</button> -->
+
             </div>
         </div>
         <div class="news-and-events">
@@ -215,14 +231,14 @@
                 </div>
                 <div class="slider sp">
                     <ul class="dots">
-                        <li class="active"></li>
+                        <li class="first active"></li>
                         <li></li>
-                        <li></li>
+                        <li class="last"></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="contact-us">
+        <div class="contact-us" >
             <div class="container">
                 <h1 class="common-heading">Contact Us</h1>
                 <div class="contact">
@@ -262,6 +278,8 @@
             </div>
         </footer>
     </main>
+     <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
